@@ -10,7 +10,7 @@ import java.io.Serializable;
  */
 @JsonDeserialize(as = AlertEventImpl.class)
 public interface AlertEvent extends Serializable {
-    String getEventType();
+    String getEventType(); //TODO vielleicht zu getType() umbenennen
 
-    JsonNode getEventData();
+    JsonNode getEventData(); //TODO vielleicht zu getData() oder getJSON() umbennnen
 }
